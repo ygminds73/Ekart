@@ -75,8 +75,8 @@ pipeline {
             steps{
                 script{
                    withCredentials([string(credentialsId: 'dockerhub-pwd', variable: 'dockerhubpwd')]) {
-                   sh 'docker login -u ankitjagtap -p ${dockerhubpwd}'}
-                   sh 'docker push ankitjagtap/devops-integration'
+                   sh 'docker login -u youngminds73 -p ${dockerhubpwd}'}
+                   sh 'docker push youngminds73/ekart:latest'
                 }
             }
         }
