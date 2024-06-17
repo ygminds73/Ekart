@@ -83,7 +83,7 @@ pipeline {
         stage('EKS and Kubectl configuration'){
             steps{
                 script{
-                    sh 'aws eks update-kubeconfig --region ap-south-1 --name ankit-cluster'
+                    sh 'aws eks update-kubeconfig --region us-east-1 --name Ekart-cluster'
                 }
             }
         }
