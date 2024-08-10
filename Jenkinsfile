@@ -64,10 +64,8 @@ pipeline {
         stage('build and Tag docker image') {
             steps {
                 script {
-                    withDockerRegistry(credentialsId: 'docker-cred') {
                         sh "docker build -t youngminds73/ekart:latest -f docker/Dockerfile ."
                     }
-                }
             }
         }
 
